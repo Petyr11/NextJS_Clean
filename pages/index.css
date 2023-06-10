@@ -1,0 +1,29 @@
+* {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+.main-c{
+    height: 50vh;
+    background-color: brown;
+
+}
+
+.nav-c{
+    
+    height: 20vh;
+    background-color: rgb(61, 120, 13);
+
+}
+
+.footer-c{
+    
+    height: 20vh;
+    background-color: rgb(124, 19, 215);
+
+}
+
