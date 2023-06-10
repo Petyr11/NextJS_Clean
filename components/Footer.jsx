@@ -8,17 +8,17 @@ const footer = () => {
         <ul className="footer-c-links">
           <li>
             <Link legacyBehavior href="/">
-              <a> Home/ </a>
+              <a> Home | </a>
             </Link>
           </li>
           <li>
             <Link legacyBehavior href="/about">
-              <a> About/ </a>
+              <a> About | </a>
             </Link>
           </li>
           <li>
             <Link legacyBehavior href="/contacts">
-              <a> Contacts/ </a>
+              <a> Contacts | </a>
             </Link>
           </li>
           <li>

@@ -1,4 +1,4 @@
-/* //---->asasasasas a         */
+/* //---->RESET */
 
 
 
@@ -100,7 +100,7 @@
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    border-top: 3px solid rgb(212, 32, 179);
+    border-top: 3px solid rgba(212, 32, 179, 0.445);
     /* margin-top: 10px; */
 }
 
@@ -114,7 +114,7 @@
 
 
 .footer-c a {
-    margin-right: .4em;
+    margin-right: .5em;
     text-decoration: none;
     color: rgb(149, 149, 149);
     font-size: medium;
