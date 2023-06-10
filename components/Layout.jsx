@@ -10,9 +10,9 @@ const layout = ({ children }) => {
       <Head>
         <title> Por favor Funciona</title>
       </Head>
-      <Navbar className="nav-c"></Navbar>
+      <Navbar></Navbar>
       <main className="main-c">{children}</main>
-      <Footer className="footer-c"></Footer>
+      <Footer></Footer>
     </>
   );
 };

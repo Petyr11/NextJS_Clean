@@ -1,29 +1,99 @@
+/* //---->asasasasas a         */
+
+
+
 * {
     font-family: Helvetica;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
-   
+
+
 }
 
-.main-c{
+
+/* //---->Navbar*/
+
+.nav-c {
+    height: 15vh;
+    background-color: rgb(157, 157, 157);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5em;
+    margin-bottom: 1em;
+
+}
+
+
+.nav-c .logo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-c h1{
+    margin-left: .5em;
+}
+
+
+.nav-c .nav-item-links {
+    display: flex;
+    list-style: none;
+    font-size: larger;
+        
+}
+
+
+.nav-c .nav-item-links li {
+    display: flex;
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    margin-right: 0.2em;
+}
+
+
+
+.nav-c .nav-item-links a{
+    font-size: x-large;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+} 
+
+
+
+.nav-item-links li:hover {
+    border-color: aliceblue;
+    
+}
+
+
+
+
+
+
+/* //---->Main*/
+
+.main-c {
     height: 50vh;
     background-color: brown;
 
 }
 
-.nav-c{
-    
-    height: 20vh;
-    background-color: rgb(61, 120, 13);
 
-}
 
-.footer-c{
-    
+/* //---->Footer*/
+
+
+.footer-c {
+
     height: 20vh;
     background-color: rgb(124, 19, 215);
 
 }
-
