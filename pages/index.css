@@ -11,6 +11,7 @@
 
 }
 
+/* ------------------------------------------------------------------------------- */
 
 /* //---->Navbar*/
 
@@ -23,7 +24,7 @@
     align-items: center;
 
     padding: 1.5em;
-    margin-bottom: 1em;
+    
 
 }
 
@@ -75,25 +76,62 @@
 
 
 
-
+/* ------------------------------------------------------------------------------- */
 
 
 /* //---->Main*/
 
 .main-c {
-    height: 50vh;
+    height: 120vh;
     background-color: brown;
 
 }
 
-
+/* ------------------------------------------------------------------------------- */
 
 /* //---->Footer*/
 
 
 .footer-c {
-
-    height: 20vh;
-    background-color: rgb(124, 19, 215);
-
+    height: 10vh;
+    background-color: rgb(27, 16, 37);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-top: 3px solid rgb(212, 32, 179);
+    /* margin-top: 10px; */
 }
+
+
+.footer-c-links {
+    display: flex;
+    list-style: none;
+    font-size: larger;
+    list-style: none;
+}
+
+
+.footer-c a {
+    margin-right: .4em;
+    text-decoration: none;
+    color: rgb(149, 149, 149);
+    font-size: medium;
+    transition: 0.4s;
+}
+
+
+.footer-c a:hover {
+    color: rgb(242, 242, 242);
+}
+
+
+.footer-c h4{
+    color: rgb(112, 112, 112);
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+
+
+} 

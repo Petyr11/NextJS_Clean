@@ -15,6 +15,7 @@ const navbar = () => {
       <h1 className="appName">PokeNext</h1>
       </div>
 
+
       <ul className="nav-item-links">
         <li>
           <Link legacyBehavior href="/">
@@ -33,7 +34,7 @@ const navbar = () => {
         </li>
         <li>
           <Link legacyBehavior href="/reviews">
-            <a> Reviews </a>
+            <a> Reviews</a>
           </Link>
         </li>
       </ul>
