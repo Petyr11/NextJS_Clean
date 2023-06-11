@@ -20,6 +20,11 @@
 }
 
 
+body{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(27, 16, 37);}
 
 
 /* //---->Navbar*/
@@ -36,16 +41,17 @@
 
 
 }
+/* ------------------------------------------------------------------- */
 
-.mobile-menu {
+.mobile-menu-icon {
     cursor: pointer;
     margin-right: 1em;
     font-size: 1.3em;
-    /* margin-left: -1em; */
+
 }
 
 
-.mobile-menu div {
+.mobile-menu-icon div {
     width: 2em;
     height: 0.2em;
     background-color: rgba(235, 235, 235, 0.608);
@@ -56,12 +62,12 @@
 }
 
 
-.mobile-menu:hover div {
+.mobile-menu-icon:hover div {
     background-color: white;
     transition: 0.3s ease;
   }
 
-
+/* ------------------------------------------------------------------- */
 
 .nav-c .logo-name{
     display: flex;
@@ -136,6 +142,7 @@
     align-items: center;
     transition: 0.4s;
     border-top: 3px solid rgba(212, 32, 179, 0.445);
+   
     /* margin-top: 10px; */
 }
 
@@ -177,3 +184,68 @@
 
 
 
+.mobile-menu-items {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Define a posição inicial da barra lateral */
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(134, 134, 134);
+    transition: left 0.3s ease;
+    /* Adiciona uma transição suave para a propriedade left */
+
+    border-right: 5px solid rgba(72, 72, 72, 0.311) ;
+    overflow-y: auto;
+
+   }
+
+
+.showMenu {
+    
+    left: 0;
+    /* Define a posição final da barra lateral quando estiver ativa */
+}
+
+
+.mobile-menu-items ul {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    height: 100%;
+    margin-top: 70px;
+  
+    /* Adicione um espaçamento interno para os itens */
+}
+
+
+.mobile-menu-items a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.mobile-menu-items li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5em;
+    transition: 0.3s ease;
+
+}
+
+  .mobile-menu-items li:hover {
+      background-color: rgb(94, 95, 95);
+      transition: 0.3s ease;
+
+  }
+
+
+
+  .mobile-menu-items .mobile-menu-icon {
+      position: absolute;
+      left: 22px;
+      top: 22px;
+
+  }

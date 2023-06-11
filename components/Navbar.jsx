@@ -17,24 +17,26 @@ const navbar = () => {
 
   return (
     <nav className="nav-c">
-      <div className="logo-name">
-        <div onClick={() => setMobileMenu(!mobileMenu)} className="mobile-menu">
+
+      <div className="logo-name">        
+        <div onClick={() => setMobileMenu(!mobileMenu)} className="mobile-menu-icon">
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>
         </div>
-       
-       <MobileMenu mobileMenu={mobileMenu}/>
 
+        <MobileMenu mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
 
-        <Image
-          src="/images/pokeball-logo.png"
-          width={50}
-          height={50}
-          alt="pokeNext"
-          href="/"
-        />
-        <h1 className="appName">PokeNext</h1>
+        <Link href="/">
+          <Image
+            src="/images/pokeball-logo.png"
+            width={50}
+            height={50}
+            alt="pokeNext"
+          />
+        </Link>
+
+        <h1 className="appName">NomeGenérico</h1>
       </div>
 
       <ul className="nav-item-links">
