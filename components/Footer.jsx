@@ -4,7 +4,7 @@ import Link from "next/link";
 const footer = () => {
   return (
     <footer>
-      <div class="footer-c">
+      <div className="footer-c">
         <ul className="footer-c-links">
           <li>
             <Link legacyBehavior href="/">
