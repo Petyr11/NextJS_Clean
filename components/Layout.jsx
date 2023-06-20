@@ -8,7 +8,7 @@ const layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title> Por favor Funciona</title>
+        <title> Template de Site</title>
       </Head>
       <Navbar></Navbar>
       <main className="main-c">{children}</main>
