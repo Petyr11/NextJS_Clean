@@ -7,7 +7,7 @@ import Link from "next/link";
 const MobileMenu = () => {
 
 
-  const [mobileMenu, setMobileMenu] = useState("false");
+  const [mobileMenu, setMobileMenu] = useState(false);
 
 
   useEffect(() => {
@@ -70,6 +70,41 @@ const MobileMenu = () => {
           <li>
             <Link legacyBehavior href="/Games">
               <a> Games</a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/Podcasts">
+              <a> Podcasts</a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/Podcasts">
+              <a> Podcasts</a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/Podcasts">
+              <a> Podcasts</a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/Podcasts">
+              <a> Podcasts</a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/Podcasts">
+              <a> Podcasts</a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/Podcasts">
+              <a> Podcasts</a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/Podcasts">
+              <a> Podcasts</a>
             </Link>
           </li>
           <li>
