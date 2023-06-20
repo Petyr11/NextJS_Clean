@@ -27,7 +27,7 @@ const footer = () => {
             </Link>
           </li>
         </ul>
-        <h4 className="date"> 10/06/2023 </h4>
+        <h4 className="date"> 19/06/2023 </h4>
       </div>
     </footer>
   );

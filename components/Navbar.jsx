@@ -1,31 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 
 const navbar = () => {
 
-  const [mobileMenu, setMobileMenu] = useState("false");
-
-  useEffect(() => {
-    console.log("mobileMenu mudou para: ", mobileMenu);
-  }, [mobileMenu]);
-  
-
 
 
 
   return (
-    <nav className="nav-c">
+    <nav className="nav-c">    
 
-      <div className="logo-name">        
-        <div onClick={() => setMobileMenu(!mobileMenu)} className="mobile-menu-icon">
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-        </div>
 
-        <MobileMenu mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
+
+      <div className="logo-name">
+
+      <div className="nav-space"></div>
+        <MobileMenu />
 
         <Link href="/">
           <Image
