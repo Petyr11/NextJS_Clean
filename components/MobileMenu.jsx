@@ -3,11 +3,11 @@ import Link from "next/link";
 
 
 
-
 const MobileMenu = () => {
 
+  console.log("mobilemenu carregando");
 
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(true);
 
 
   useEffect(() => {
