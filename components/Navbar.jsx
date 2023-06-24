@@ -1,12 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { BsSun,BsFillMoonFill} from "react-icons/bs";
 
 
 const navbar = () => {
+  // const [icon, setIcon] = useState("sun");
+  // const [elementIcon, setElementIcon] = useState(
+  //   <BsSun onClick={() => toggleIcon()} className="icon-sun"></BsSun>
+  // );
+
+  // function toggleIcon() {
+  //   console.log("Clickou função toggleIcon");
+
+  //   if (icon === "sun") {
+  //     setIcon("moon");
+  //     setElementIcon(
+  //       <BsFillMoonFill
+  //         onClick={() => toggleIcon()}
+  //         className="icon-moon"
+  //       ></BsFillMoonFill>
+  //     );
+  //     console.log("Changed icon to moon");
+  //     return;
+  //   }
+
+  //   if (icon === "moon") {
+  //     setIcon("sun");
+  //     setElementIcon(
+  //       <BsSun onClick={() => toggleIcon()} className="icon-sun"></BsSun>
+  //     );
+  //     console.log("Changed icon to sun");
+  //   }
+  // }
+
+  // const [icon, setIcon] = useState("sun");
+  
+
+  // function toggleIcon() {
+  //   console.log("clicou")
+
+  //   if (icon === "sun") {
+  //     setIcon("moon");
+  //   }
+
+  //   setIcon("sun");
+  // }
+
+
+  // var elementIcon = <BsSun onClick={toggleIcon} className="icon-sun" />;
+  
+  // if (icon === "moon") {
+  //   elementIcon = <BsFillMoonFill onClick={toggleIcon} className="icon-moon" />;
+  // }
+
+  // if (icon === "sun") {
+  //   elementIcon = <BsSun onClick={toggleIcon} className="icon-sun" />;
+  // }
+
+
+  import { BsSun,BsFillMoonFill} from "react-icons/bs";
+  const [icon, setIcon] = useState("sun");
+
+  function toggleIcon() {
+    console.log("clicou");
+
+    if (icon === "sun") {
+      setIcon("moon");
+    } else {
+      setIcon("sun");
+    }
+  }
+
+  let elementIcon = <BsSun onClick={toggleIcon} className="icon-sun" />;
+
+  if (icon === "moon") {
+    elementIcon = <BsFillMoonFill onClick={toggleIcon} className="icon-moon" />;
+  }
+
+
   return (
     <>
-      
       <nav className="nav-c">
         <div className="logo-name">
           <div className="nav-space"></div>
@@ -65,7 +139,7 @@ const navbar = () => {
             </div>
           </li>
 
-          {/* menu dropdown aqui ---------------*/}
+          {/* menu dropdown aqui FIM ---------------*/}
 
           <li>
             <Link legacyBehavior href="/about">
@@ -83,6 +157,11 @@ const navbar = () => {
             </Link>
           </li>
         </ul>
+        {/* ícone Sun/Moon Aqui */}
+
+        {elementIcon}
+
+        {/* ícone Sun/Moon Aqui FIM */}
       </nav>
     </>
   );
