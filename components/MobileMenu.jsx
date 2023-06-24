@@ -7,7 +7,7 @@ const MobileMenu = () => {
 
   console.log("mobilemenu carregando");
 
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
 
   useEffect(() => {

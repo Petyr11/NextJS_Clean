@@ -31,6 +31,27 @@ body{
 
 }
 
+.icon-sun {    
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-right: 20px;
+    
+}
+
+.icon-moon {    
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
 
 /* //---->drop down Menu*/
 

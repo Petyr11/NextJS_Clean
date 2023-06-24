@@ -11,6 +11,7 @@ const layout = ({ children }) => {
     <>
       <Head>
         <title> Template de Site</title>
+      
       </Head>
       <MobileMenu></MobileMenu>
       <Navbar></Navbar>

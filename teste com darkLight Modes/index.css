@@ -1,0 +1,107 @@
+:root {
+    --body-bg: rgba(255, 192, 203, 0.525);
+    --text-color: rgb(112, 2, 2);
+    --link-color: rgb(112, 2, 2);
+    --text-color-hover: rgb(229, 84, 58);
+    --button-bg: rgb(201, 6, 6);
+    --button-bg-hover: rgb(229, 84, 58);
+    --button-text-color: white;
+
+    --transition-duration: 0.3s;
+    --transition-timing-function: ease-in-out;
+    
+    
+}
+
+.dark-mode:root{
+    --body-bg: rgb(0, 0, 0);
+    --text-color: rgb(170, 170, 170);
+    --link-color: rgb(192, 188, 188);
+    --text-color-hover: rgb(255, 255, 255);
+    --button-bg: rgb(97, 97, 97);
+    --button-bg-hover: rgb(67, 67, 67);
+    --button-text-color: rgb(255, 255, 255);
+
+    --transition-duration: 0.3s;
+    --transition-timing-function: ease-in-out;
+    
+    
+}
+
+
+
+
+* {
+    font-family: fantasy;
+    padding: 10px;
+    transition: background-color var(--transition-duration) var(--transition-timing-function); 
+    box-sizing: border-box;
+    
+}
+
+
+
+body {
+    background-color: var(--body-bg);
+    
+    
+
+}
+
+
+h1,
+p,
+a {
+    color: var(--text-color);
+    
+   
+}
+
+
+h1:hover,
+p:hover,
+a:hover {
+    color: var(--text-color-hover);
+    
+}
+
+button {
+    background-color: var(--button-bg);
+    border: none;
+    color: var(--button-text-color);
+    cursor: pointer;
+  
+    
+}
+
+button:hover {
+    background-color: var(--button-bg-hover);
+    
+}
+
+
+
+/* ícones de sol/lua-------------------- */
+
+
+.bi-sun {
+    
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.bi-sun-fill {
+    font-size: 1em;;
+    color: rgb(0, 0, 0);
+}
+
+.bi-moon {       
+    font-size: 1em;
+    color: rgb(164, 164, 164);
+}
+.bi-moon-fill {       
+    font-size: 1.5em;
+    color: rgb(164, 164, 164);
+    cursor: pointer;
+}

@@ -59,7 +59,7 @@ const navbar = () => {
   // }
 
 
-  import { BsSun,BsFillMoonFill} from "react-icons/bs";
+ 
   const [icon, setIcon] = useState("sun");
 
   function toggleIcon() {
