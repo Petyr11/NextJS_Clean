@@ -1,66 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsSun,BsFillMoonFill} from "react-icons/bs";
+import { BsSun,BsFillMoonFill,BsSearch} from "react-icons/bs";
 
 
 const navbar = () => {
-  // const [icon, setIcon] = useState("sun");
-  // const [elementIcon, setElementIcon] = useState(
-  //   <BsSun onClick={() => toggleIcon()} className="icon-sun"></BsSun>
-  // );
-
-  // function toggleIcon() {
-  //   console.log("Clickou função toggleIcon");
-
-  //   if (icon === "sun") {
-  //     setIcon("moon");
-  //     setElementIcon(
-  //       <BsFillMoonFill
-  //         onClick={() => toggleIcon()}
-  //         className="icon-moon"
-  //       ></BsFillMoonFill>
-  //     );
-  //     console.log("Changed icon to moon");
-  //     return;
-  //   }
-
-  //   if (icon === "moon") {
-  //     setIcon("sun");
-  //     setElementIcon(
-  //       <BsSun onClick={() => toggleIcon()} className="icon-sun"></BsSun>
-  //     );
-  //     console.log("Changed icon to sun");
-  //   }
-  // }
-
-  // const [icon, setIcon] = useState("sun");
-  
-
-  // function toggleIcon() {
-  //   console.log("clicou")
-
-  //   if (icon === "sun") {
-  //     setIcon("moon");
-  //   }
-
-  //   setIcon("sun");
-  // }
-
-
-  // var elementIcon = <BsSun onClick={toggleIcon} className="icon-sun" />;
-  
-  // if (icon === "moon") {
-  //   elementIcon = <BsFillMoonFill onClick={toggleIcon} className="icon-moon" />;
-  // }
-
-  // if (icon === "sun") {
-  //   elementIcon = <BsSun onClick={toggleIcon} className="icon-sun" />;
-  // }
-
-
- 
   const [icon, setIcon] = useState("sun");
+
+
+
+  useEffect(() => {
+    toggleDarkMode();
+  }, [icon]);
+
+
+
+  function toggleDarkMode() {
+    console.log("clicou toggleDarkMode");
+
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+    
+    const root = document.documentElement;
+    root.classList.toggle("dark-mode");
+  }
+
 
   function toggleIcon() {
     console.log("clicou");
@@ -71,6 +35,7 @@ const navbar = () => {
       setIcon("sun");
     }
   }
+
 
   let elementIcon = <BsSun onClick={toggleIcon} className="icon-sun" />;
 
@@ -97,8 +62,11 @@ const navbar = () => {
           <h1 className="appName">NomeGenérico</h1>
         </div>
 
-        <div>
-          <input className="nav-search" type="text" placeholder="Search" />
+        <div className="nav-search-c">
+          <input className="nav-search-input" type="text" placeholder="Search" />
+          <BsSearch className="nav-search-icon"></BsSearch>
+
+
         </div>
 
         <ul className="nav-item-links">
