@@ -20,7 +20,7 @@ const navbar = () => {
 
     const body = document.body;
     body.classList.toggle("dark-mode");
-    
+
     const root = document.documentElement;
     root.classList.toggle("dark-mode");
   }
@@ -52,6 +52,7 @@ const navbar = () => {
 
           <Link href="/">
             <Image
+            className="logoImg"
               src="/images/pokeball-logo.png"
               width={50}
               height={50}

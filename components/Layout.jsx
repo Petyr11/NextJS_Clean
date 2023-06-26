@@ -11,6 +11,7 @@ const layout = ({ children }) => {
     <>
       <Head>
         <title> Template de Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       
       </Head>
       <MobileMenu></MobileMenu>
