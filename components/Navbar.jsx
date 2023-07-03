@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsSun,BsFillMoonFill,BsSearch} from "react-icons/bs";
+import { BsSun, BsFillMoonFill, BsSearch, BsCart, BsList } from "react-icons/bs";
+
 
 
 const navbar = () => {
+
+  
   const [icon, setIcon] = useState("sun");
-
-
 
   useEffect(() => {
     toggleDarkMode();
   }, [icon]);
-
-
 
   function toggleDarkMode() {
     console.log("clicou toggleDarkMode");
@@ -25,7 +24,6 @@ const navbar = () => {
     root.classList.toggle("dark-mode");
   }
 
-
   function toggleIcon() {
     console.log("clicou");
 
@@ -36,7 +34,6 @@ const navbar = () => {
     }
   }
 
-
   let elementIcon = <BsSun onClick={toggleIcon} className="icon-sun" />;
 
   if (icon === "moon") {
@@ -44,15 +41,18 @@ const navbar = () => {
   }
 
 
+
+
   return (
     <>
       <nav className="nav-c">
         <div className="logo-name">
+          <BsList></BsList>
           <div className="nav-space"></div>
 
           <Link href="/">
             <Image
-            className="logoImg"
+              className="logoImg"
               src="/images/pokeball-logo.png"
               width={50}
               height={50}
@@ -64,10 +64,13 @@ const navbar = () => {
         </div>
 
         <div className="nav-search-c">
-          <input className="nav-search-input" type="text" placeholder="Search" />
+          <input
+            type="search"
+            className="nav-search-input"
+            placeholder="Search"
+            required
+          />
           <BsSearch className="nav-search-icon"></BsSearch>
-
-
         </div>
 
         <ul className="nav-item-links">
@@ -80,7 +83,7 @@ const navbar = () => {
           {/* menu dropdown aqui ---------------*/}
 
           <li className="dropdown">
-            <a>Categorias</a>
+            <a className="dropdown-openner">Categorias</a>
 
             <div className="dropdown-content">
               <ul>
@@ -126,6 +129,16 @@ const navbar = () => {
             </Link>
           </li>
         </ul>
+
+        {/* Carrinho Aqui */}
+
+        <div className="icon-cart">
+          <BsCart></BsCart>
+          <span className="icon-cart-status"> 2 </span>
+        </div>
+
+        {/* Carrinho Aqui FIM*/}
+
         {/* ícone Sun/Moon Aqui */}
 
         {elementIcon}

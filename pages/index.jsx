@@ -1,11 +1,12 @@
 import React from "react";
+import Products from "@/components/Products";
 
 
 const index = () => {
   return (
-    <h1>
-      Pronto para começar. Altere o arquivo index.js dentro da pasta Pages
-    </h1>
+    <>
+      <Products></Products>
+    </>
   );
 };
 
